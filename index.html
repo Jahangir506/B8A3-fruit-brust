@@ -35,10 +35,15 @@
     <!-- fontAwesome cdn link -->
   </head>
   <body>
-    <header>
-      <nav class="container mx-auto py-12">
-        <div class="navbar bg-[#F85559] rounded-full pl-5 pr-12 py-6">
-          <div class="navbar-start">
+    <!-- navbar starts  -->
+    <header class="md:bg-[#F85559] lg:bg-white">
+      <nav class="container mx-auto py-3 md:py-5 lg:py-12">
+        <div
+          class="navbar flex-row-reverse md:flex-row lg:flex-row bg-white md:bg-[#F85559] lg:bg-[#F85559] md:rounded-none lg:rounded-full px-4 py-6"
+        >
+          <div
+            class="navbar-start justify-end md:justify-start lg:justify-start"
+          >
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
@@ -58,7 +63,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content right-0 md:left-0 lg:left-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 md:w-52 lg:w-52"
               >
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
@@ -75,76 +80,40 @@
               </ul>
             </div>
           </div>
-          <div class="flex justify-center items-center w-80">
-            <img class="mx-2 w-fit" src="./images/logo.png" alt="" />
-            <a class="text-white cursor-pointer normal-case text-3xl"
+          <div
+            class="flex justify-start md:justify-center lg:justify-center items-center w-80"
+          >
+            <img
+              class="mx-2 w-9 md:w-fit lg:w-fit"
+              src="./images/logo.png"
+              alt=""
+            />
+            <a
+              class="text-black md:text-white lg:text-white cursor-pointer normal-case text-xl md:text-3xl lg:text-3xl"
               >Fruit Burst</a
             >
           </div>
-          <div class="relative navbar-end">
+          <div class="relative navbar-end hidden md:flex lg:flex pr-4">
             <input
               type="text"
-              placeholder="Search"
-              class="input input-bordered w-24 md:w-auto rounded-full"
+              placeholder="Search here"
+              class="input input-bordered md:w-3 lg:w-80 md:rounded lg:rounded-full"
             />
             <i
-              class="absolute right-5 text-md fa-solid fa-magnifying-glass"
+              class="absolute md:right-6 lg:right-8 text-md fa-solid fa-magnifying-glass"
             ></i>
           </div>
         </div>
       </nav>
+      <!-- navbar ends  -->
+
+      <!-- slider section starts  -->
+      <div>
+        
+      </div>
+      <!-- slider section ends -->
     </header>
     <main></main>
     <footer></footer>
   </body>
 </html>
-
-<!-- <nav class="container mx-auto">
-  <div class="navbar flex justify-between bg-base-100">
-    <div class="navbar-start hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Home</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Shop</a></li>
-        <li><a>All Fruits</a></li>
-      </ul>
-    </div>
-    <div>
-      <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-    </div>
-    <div class="form-control">
-      <input
-        type="text"
-        placeholder="Search"
-        class="input input-bordered w-24 md:w-auto"
-      />
-    </div>
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16"
-          />
-        </svg>
-      </label>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-      >
-        <li><a>Home</a></li>
-        <li><a>About Us</a></li>
-        <li><a>Shop</a></li>
-        <li><a>All Fruits</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
