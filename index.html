@@ -36,83 +36,83 @@
   </head>
   <body>
     <!-- navbar starts  -->
-    <header class="md:bg-[#F85559] lg:bg-white">
-      <nav class="container mx-auto py-3 md:py-5 lg:py-12">
-        <div
-          class="navbar flex-row-reverse md:flex-row lg:flex-row bg-white md:bg-[#F85559] lg:bg-[#F85559] md:rounded-none lg:rounded-full px-4 py-6"
-        >
+    <header>
+      <div class="md:bg-[#F85559] lg:bg-white">
+        <nav class="container mx-auto py-3 md:py-5 lg:py-12">
           <div
-            class="navbar-start justify-end md:justify-start lg:justify-start"
+            class="navbar flex-row-reverse md:flex-row lg:flex-row bg-white md:bg-[#F85559] lg:bg-[#F85559] md:rounded-none lg:rounded-full px-4 py-6"
           >
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <p
-                    class="mt-3"
-                    ath
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content right-0 md:left-0 lg:left-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 md:w-52 lg:w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal text-white px-1">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex justify-start md:justify-center lg:justify-center items-center w-80"
-          >
-            <img
-              class="mx-2 w-9 md:w-fit lg:w-fit"
-              src="./images/logo.png"
-              alt=""
-            />
-            <a
-              class="text-black md:text-white lg:text-white cursor-pointer normal-case text-xl md:text-3xl lg:text-3xl"
-              >Fruit Burst</a
+            <div
+              class="navbar-start justify-end md:justify-start lg:justify-start"
             >
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content right-0 md:left-0 lg:left-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-28 md:w-52 lg:w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-white px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="flex justify-start md:justify-center lg:justify-center items-center w-80"
+            >
+              <img
+                class="mx-2 w-9 md:w-fit lg:w-fit"
+                src="./images/logo.png"
+                alt=""
+              />
+              <a
+                class="text-black md:text-white lg:text-white cursor-pointer normal-case text-xl md:text-3xl lg:text-3xl"
+                >Fruit Burst</a
+              >
+            </div>
+            <div class="relative navbar-end hidden md:flex lg:flex pr-4">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered md:w-3 lg:w-80 md:rounded lg:rounded-full"
+              />
+              <i
+                class="absolute md:right-6 lg:right-8 text-md fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
           </div>
-          <div class="relative navbar-end hidden md:flex lg:flex pr-4">
-            <input
-              type="text"
-              placeholder="Search here"
-              class="input input-bordered md:w-3 lg:w-80 md:rounded lg:rounded-full"
-            />
-            <i
-              class="absolute md:right-6 lg:right-8 text-md fa-solid fa-magnifying-glass"
-            ></i>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!-- navbar ends  -->
 
       <!-- banner slider section starts  -->
-      <div class="container mx-auto relative mb-32">
+      <div class="container mx-auto relative md:my-14 lg:mb-32">
         <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full">
+          <div id="slide1" class="carousel-item relative w-full h-full">
             <img src="./images/banner1.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -128,20 +128,24 @@
                 >❯</a
               >
             </div>
-            <div class="text-center absolute left-[33%] top-28">
-              <h2 class="text-6xl text-white">
+            <div
+              class="text-center absolute inset-0 lg:inset-48 top-10 md:top-16 lg:top-24"
+            >
+              <h2 class="text-xl md:text-4xl lg:text-6xl text-white">
                 Exotic tastes at your <br />
                 doorstep
               </h2>
-              <p class="text-white my-4">Lorem ipsum dolor sit amet.</p>
+              <p class="text-white text-xs md:text-sm lg:text-md my-2 lg:my-4">
+                Lorem ipsum dolor sit amet.
+              </p>
               <button
-                class="btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d]"
+                class="lg:btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d] rounded md:rounded-md lg:rounded-md p-2 md:p-3 lg:py-3 lg:px-4 text-xs lg:text-base"
               >
                 Shop Now
               </button>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full">
+          <div id="slide2" class="carousel-item relative w-full h-full">
             <img src="./images/banner2.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -157,20 +161,22 @@
                 >❯</a
               >
             </div>
-            <div class="text-center absolute left-[33%] top-28">
-              <h2 class="text-6xl text-white">
+            <div class="text-center absolute inset-0 top-7 md:top-16 lg:top-24">
+              <h2 class="text-xl md:text-4xl lg:text-6xl text-white">
                 Exotic tastes at your <br />
                 doorstep
               </h2>
-              <p class="text-white my-4">Lorem ipsum dolor sit amet.</p>
+              <p class="text-white text-xs md:text-sm lg:text-md my-2 lg:my-4">
+                Lorem ipsum dolor sit amet.
+              </p>
               <button
-                class="btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d]"
+                class="lg:btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d] rounded md:rounded-md lg:rounded-md p-2 md:p-3 lg:py-3 lg:px-4 text-xs lg:text-base"
               >
                 Shop Now
               </button>
             </div>
           </div>
-          <div id="slide3" class="carousel-item relative w-full">
+          <div id="slide3" class="carousel-item relative w-full h-full">
             <img src="./images/banner3.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -186,20 +192,22 @@
                 >❯</a
               >
             </div>
-            <div class="text-center absolute left-[33%] top-28">
-              <h2 class="text-6xl text-white">
+            <div class="text-center absolute inset-0 top-7 md:top-16 lg:top-24">
+              <h2 class="text-xl md:text-4xl lg:text-6xl text-white">
                 Exotic tastes at your <br />
                 doorstep
               </h2>
-              <p class="text-white my-4">Lorem ipsum dolor sit amet.</p>
+              <p class="text-white text-xs md:text-sm lg:text-md my-2 lg:my-4">
+                Lorem ipsum dolor sit amet.
+              </p>
               <button
-                class="btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d]"
+                class="lg:btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d] rounded md:rounded-md lg:rounded-md p-2 md:p-3 lg:py-3 lg:px-4 text-xs lg:text-base"
               >
                 Shop Now
               </button>
             </div>
           </div>
-          <div id="slide4" class="carousel-item relative w-full">
+          <div id="slide4" class="carousel-item relative w-full h-full">
             <img src="./images/banner4.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -215,42 +223,54 @@
                 >❯</a
               >
             </div>
-            <div class="text-center absolute left-[33%] top-28">
-              <h2 class="text-6xl text-white">
+            <div class="text-center absolute inset-0 top-7 md:top-16 lg:top-24">
+              <h2 class="text-xl md:text-4xl lg:text-6xl text-white">
                 Exotic tastes at your <br />
                 doorstep
               </h2>
-              <p class="text-white my-4">Lorem ipsum dolor sit amet.</p>
+              <p class="text-white text-xs md:text-sm lg:text-md my-2 lg:my-4">
+                Lorem ipsum dolor sit amet.
+              </p>
               <button
-                class="btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d]"
+                class="lg:btn border-none capitalize text-white bg-[#F85559] hover:bg-[#e91a1d] rounded md:rounded-md lg:rounded-md p-2 md:p-3 lg:py-3 lg:px-4 text-xs lg:text-base"
               >
                 Shop Now
               </button>
             </div>
           </div>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center md:my-4">
           <div
-            class="flex gap-20 justify-center items-center shadow-md bg-white absolute bottom-[-110px] p-10 text-center rounded-md"
+            class="hidden md:flex lg:flex md:gap-20 lg:gap-20 justify-center items-center md:shadow-2xl lg:shadow-md md:bg-[#f0c3c4] lg:bg-white absolute md:bottom[44px] lg:bottom-[-110px] md:p-6 lg:p-10 text-center md:rounded rounded-md"
           >
             <div>
-              <img src="./images/fruit1.png" alt="" srcset="" />
+              <div class="flex justify-center items-center">
+                <img src="./images/fruit1.png" class="w-16" alt="" srcset="" />
+              </div>
               <p class="mt-3">Strawberry</p>
             </div>
             <div>
-              <img src="./images/fruit2.png" alt="" srcset="" />
+              <div class="flex justify-center items-center">
+                <img src="./images/fruit2.png" class="w-16" alt="" srcset="" />
+              </div>
               <p class="mt-3">Strawberry</p>
             </div>
             <div>
-              <img src="./images/fruit3.png" alt="" srcset="" />
+              <div class="flex justify-center items-center">
+                <img src="./images/fruit3.png" class="w-16" alt="" srcset="" />
+              </div>
               <p class="mt-3">Strawberry</p>
             </div>
             <div>
-              <img src="./images/fruit4.png" alt="" srcset="" />
+              <div class="flex justify-center items-center">
+                <img src="./images/fruit4.png" class="w-16" alt="" srcset="" />
+              </div>
               <p class="mt-3">Strawberry</p>
             </div>
             <div>
-              <img src="./images/fruit5.png" alt="" srcset="" />
+              <div class="flex justify-center items-center">
+                <img src="./images/fruit5.png" class="w-16" alt="" srcset="" />
+              </div>
               <p class="mt-3">Strawberry</p>
             </div>
           </div>
